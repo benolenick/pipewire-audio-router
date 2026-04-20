@@ -1,7 +1,7 @@
 #!/bin/bash
 # Auto-route audio: Chrome→headset, Firefox→speakers
-HEADSET="bluez_output.00_6A_8E_16_E0_AB.1"
-SPEAKERS="alsa_output.pci-0000_00_1f.3.analog-stereo"
+HEADSET="bluez_output.XX_XX_XX_XX_XX_XX.1"   # replace with your headset's MAC
+SPEAKERS="alsa_output.pci-0000_00_1f.3.analog-stereo"  # replace with your speakers sink
 
 route_streams() {
     pactl list sink-inputs 2>/dev/null | awk '
